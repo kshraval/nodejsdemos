@@ -1,0 +1,42 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+package-lock.json
+/node_modules
+
+# testing
+/coverage
+/test
+
+# production
+/build
+
+#sass / scss generate css should be ignored
+src/**/*.css
+# But not these files...
+!src/components/image-annotation/image.annotation.css
+!src/components/quill-mention/quill.mention.css
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#don't need any of the .vscode 
+.vscode/chrome/**
+
+#don't need any of the .orig
+*.orig
+
+.project
+
+bin/
+
+# sonarqube code analysis
+.scannerwork
